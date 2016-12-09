@@ -1,20 +1,21 @@
 var SlackBot = require('slackbots');
 
 var bot = new SlackBot({
-    token: 'token', // Add a bot https://my.slack.com/services/new/bot and put the token  
+    token: 'token',
     name: 'poopBot'
 });
-
+//on start ->
 bot.on('start', function() {
-    // more information about additional params https://api.slack.com/methods/chat.postMessage 
     var params = {
+	    	//set avatr to :shit
 		icon_emoji: ':shit:'
     };
-	
+	//pm user 'nico' with 'poop'
 	bot.postMessageToUser('nico', 'poop', params); 
 	
+	//on message data ->
 	bot.on('message', function(data) {
-    // all ingoing events https://api.slack.com/rtm 
+		// dump info into console
     console.log(data);
 });
 });
