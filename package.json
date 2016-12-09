@@ -1,0 +1,23 @@
+{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "For bot testing in slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "cake"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mokru/slackbot.git"
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "author": "Mokru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mokru/slackbot/issues"
+  },
+  "homepage": "https://github.com/Mokru/slackbot#readme"
+}
